@@ -70,6 +70,8 @@ function buscarCliente() {
             agendarCliente(palabraClave)
         }
     }
+} if (email.indexOf("@") < 3 || email.indexOf("@") === -1) {
+    console.log('no es mail')
 }
 
 function agendarCliente(x) {
@@ -77,7 +79,7 @@ function agendarCliente(x) {
     let apellido = prompt("ingresa el apellido del cliente").trim()
     let celular = parseInt(prompt("ingresa el celular del cliente"))
     let email = prompt("ingresa el email del cliente").trim()
-    if (nombre === "" || apellido === "" || isNaN(celular) || email === "") {      
+    if (nombre === "" || apellido === "" || isNaN(celular) || email === "" || email.indexOf("@") < 3 || email.indexOf("@") === -1) {
         alert("Por favor ingresa valores válidos")
         console.log(email.indexOf("@"))
         agendarCliente()
