@@ -62,7 +62,7 @@ function buscarCliente() {
 
     if (busqueda.length > 0) {
         console.table(busqueda)
-        alert('El resultado de la busqueda se verá por consola')
+        alert('Se han encontrado ' + busqueda.length + ' resultados que se muestran por consola')
         menuAgenda()
     } else {
         let busqueda = confirm("No existe ningun cliente que se llame " + palabraClave + "\n¿Lo queres agendar?")
@@ -70,19 +70,18 @@ function buscarCliente() {
             agendarCliente(palabraClave)
         }
     }
-} if (email.indexOf("@") < 3 || email.indexOf("@") === -1) {
-    console.log('no es mail')
 }
-
 function agendarCliente(x) {
     let nombre = prompt("ingresa el nombre del cliente", x).trim()
     let apellido = prompt("ingresa el apellido del cliente").trim()
     let celular = parseInt(prompt("ingresa el celular del cliente"))
     let email = prompt("ingresa el email del cliente").trim()
     if (nombre === "" || apellido === "" || isNaN(celular) || email === "" || email.indexOf("@") < 3 || email.indexOf("@") === -1) {
-        alert("Por favor ingresa valores válidos")
-        console.log(email.indexOf("@"))
-        agendarCliente()
+        if (confirm("Ha ingresado valores no válidos.\n¿Desea volver a ingresar los datos?") === false) {
+            return alert('¡Gracias por usar la Agenda Telefónica V1.0!')
+        } else {
+            agendarCliente()
+        }
     }
     let cliente = new Clientes(nombre, apellido, celular, email)
     agenda.push(cliente)
