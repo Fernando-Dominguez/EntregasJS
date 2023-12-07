@@ -235,9 +235,9 @@ const contenedorProductos = document.querySelector("#contenedorPruductos");
 function cargarProductos(productosSeleccionados = productos) {
 
     contenedorProductos.innerHTML = "";
-
+    // Iterando produtos para mostrar en DOM
     productosSeleccionados.forEach(producto => {
-
+        // Creando Producto para insertar en DOM
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
@@ -248,6 +248,8 @@ function cargarProductos(productosSeleccionados = productos) {
                 <p class="productoStock">Cantidad: ${producto.stock}</p>
             </div>
         `;
+
+        // Agregando el producto al DOM
         contenedorProductos.append(div);
     })
 }
@@ -274,6 +276,9 @@ function buscarProductos() {
 // Agregar Producto
 
 function agregarProducto() {
+
+    // Insertando Formulario en el DOM
+
     const formulario = document.getElementById("formAgregar")
     formulario.innerHTML = `
             <label for="inputNombre">Nombre:</label>
@@ -293,8 +298,12 @@ function agregarProducto() {
 
             <button type="submit">Agregar</button>
     `
+    // Pausando envio
+
     formulario.addEventListener("submit", function (e) {
         e.preventDefault();
+
+        // Validando los inputs cargados por el usuario
 
         const inputNombre = document.getElementById("inputNombre").value.trim()
         const inputTitulo = document.getElementById("inputTitulo").value.trim()
@@ -308,20 +317,32 @@ function agregarProducto() {
             return
         }
 
+        // Instanciando nuevo producto
+
         const producto = new Productos(inputNombre, inputTitulo, urlImage, inputCategoria, inputPrecio, inputStock)
         
+        // Chequeando que no exista previamente elproducto
+
         if (productos.some((elemento) => elemento.nombre === producto.nombre)) { 
             alert("el producto ya existe")
             return
         }
 
+        // Agregando el producto al Array
+
         productos.push(producto)
+
+        // Cargando el localStorage
 
         localStorage.setItem("prod", JSON.stringify(productos))
         alert(`se agrego el producto ${producto.nombre} a la lista`)
 
-        console.log(productos)
+        // Reseteando Formulario
+
         formulario.reset()
+
+        // Actualizando el catalogo con el nuevo producto
+
         cargarProductos(productos)
 
     })

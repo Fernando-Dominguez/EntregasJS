@@ -6,7 +6,9 @@
 li {
     list-style-type: none;
   }
+
 /* Preajuste de imagenes */
+
 img {
     max-width: 100%;
     width: 100%;
@@ -28,8 +30,7 @@ main{
     padding: 20px;
 }
 
-.contenedorPruductos {/* 
-    background-color: antiquewhite; */
+.contenedorPruductos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -59,8 +60,4 @@ main{
     text-align: center;
     font-size: 1rem;
     width: 100%;
-}
-
-.lateralDerecho{
-
 }
