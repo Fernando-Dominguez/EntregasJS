@@ -219,10 +219,10 @@ let productos = [
 
 // Chequeando el localStorage
 
-if(localStorage.getItem("prod")){
+if (localStorage.getItem("prod")) {
     productos = JSON.parse(localStorage.getItem("prod"))
     console.log(productos)
-}else{
+} else {
     productos = productos
 }
 
@@ -273,6 +273,21 @@ function buscarProductos() {
     }
 }
 
+// Buscar productos por categoria
+
+function filtrarXCategoria(cat) {
+    const palabraClv = cat.trim().toUpperCase()
+    console.log(cat)
+    const resultado = productos.filter((producto) => producto.categoria.toUpperCase().includes(palabraClv)
+    )
+    if (resultado.length > 0) {
+        cargarProductos(resultado)
+    } else {
+        alert("no hay coincidencias")
+    }
+}
+
+
 // Agregar Producto
 
 function agregarProducto() {
@@ -320,10 +335,10 @@ function agregarProducto() {
         // Instanciando nuevo producto
 
         const producto = new Productos(inputNombre, inputTitulo, urlImage, inputCategoria, inputPrecio, inputStock)
-        
+
         // Chequeando que no exista previamente elproducto
 
-        if (productos.some((elemento) => elemento.nombre === producto.nombre)) { 
+        if (productos.some((elemento) => elemento.nombre === producto.nombre)) {
             alert("el producto ya existe")
             return
         }
@@ -356,3 +371,18 @@ botonBuscar.addEventListener("click", buscarProductos)
 
 const agregarProd = document.getElementById("agregarProd")
 agregarProd.addEventListener("click", agregarProducto)
+
+const catTodo = document.getElementById("todos")
+catTodo.addEventListener("click", x => cargarProductos())
+
+const catBolsas = document.getElementById("bolsas")
+catBolsas.addEventListener("click", x => filtrarXCategoria("bolsas"))
+
+const catBoligrafos = document.getElementById("boligrafos")
+catBoligrafos.addEventListener("click", x => filtrarXCategoria(catBoligrafos.id))
+
+const catBolsos = document.getElementById("bolsos")
+catBolsos.addEventListener("click", x => filtrarXCategoria(catBolsos.id))
+
+const catCalendarios = document.getElementById("calendarios")
+catCalendarios.addEventListener("click", x => filtrarXCategoria(catCalendarios.id))
