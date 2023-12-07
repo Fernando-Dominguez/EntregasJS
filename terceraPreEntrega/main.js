@@ -301,17 +301,15 @@ function agregarProducto() {
 
             <label for="inputTitulo">Titulo:</label>
             <input id="inputTitulo" type="text" required>
-
             
             <label for="inputCategoria">Categoria:</label>
-
             <select name="pets" id="pet-select">
                 <option value="boligrafos">Boligrafos</option>
                 <option value="bolsas">Bolsas</option>
                 <option value="bolsos">Bolsos</option>
                 <option value="calendarios">Calendarios</option>
             </select>       
-</br>
+            </br>
             <label for="inputPrecio">Precio:</label>
             <input id="inputPrecio" type="number" required>
 
