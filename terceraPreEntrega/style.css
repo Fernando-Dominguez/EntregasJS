@@ -5,6 +5,7 @@
 }
 li {
     list-style-type: none;
+    padding: 10px;
   }
 
 /* Preajuste de imagenes */
@@ -39,6 +40,9 @@ main{
 .producto {
     box-shadow: 0 0 10px;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .productoImagen {
@@ -55,9 +59,35 @@ main{
     flex-direction: column;
     gap: .25rem;
     align-items: center;
+    
 }
 .productoTitulo{
     text-align: center;
     font-size: 1rem;
     width: 100%;
+}
+
+.lateralDerecho{
+    padding: 30px;
+    text-align: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section{
+    margin-top: 30px;
+}
+
+#agregarProd{
+    margin-top: 20px;
+}
+
+.formAgregar{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: var();
 }
