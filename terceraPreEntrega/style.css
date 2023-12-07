@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+  } */
+
+  form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+  }
+
+
 li {
     list-style-type: none;
     padding: 10px;
@@ -73,7 +94,7 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 section{
@@ -89,5 +110,21 @@ section{
     padding: 40px;
     display: flex;
     flex-direction: column;
-    align-items: var();
+}
+
+.formAgregar input{
+    margin: 50px;
+}
+
+.btn, .campo, h3{
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(43, 80, 226);
+    color: white;
+    padding: 5px;
+    border: 0;
 }

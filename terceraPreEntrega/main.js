@@ -229,11 +229,13 @@ if (localStorage.getItem("prod")) {
 // Captura de contenedor en DOM
 
 const contenedorProductos = document.querySelector("#contenedorPruductos");
-
+const tituloPrincipal = document.querySelector("#tituloProductos");
+console.log(tituloPrincipal)
 // Carga de Producto
 
 function cargarProductos(productosSeleccionados = productos) {
-
+    
+    tituloPrincipal.innerHTML = "CATALOGO DE PRODUCTOS"
     contenedorProductos.innerHTML = "";
     // Iterando produtos para mostrar en DOM
     productosSeleccionados.forEach(producto => {
@@ -282,6 +284,7 @@ function filtrarXCategoria(cat) {
     )
     if (resultado.length > 0) {
         cargarProductos(resultado)
+        tituloPrincipal.innerHTML = palabraClv 
     } else {
         alert("no hay coincidencias")
     }
@@ -297,13 +300,13 @@ function agregarProducto() {
     const formulario = document.getElementById("formAgregar")
     formulario.innerHTML = `
             <label for="inputNombre">Nombre:</label>
-            <input id="inputNombre" type="text" required>
+            <input class="campo" id="inputNombre" type="text" required>
 
             <label for="inputTitulo">Titulo:</label>
-            <input id="inputTitulo" type="text" required>
+            <input class="campo" id="inputTitulo" type="text" required>
             
             <label for="inputCategoria">Categoria:</label>
-            <select name="pets" id="pet-select">
+            <select name="pets" class="campo" id="pet-select">
                 <option value="boligrafos">Boligrafos</option>
                 <option value="bolsas">Bolsas</option>
                 <option value="bolsos">Bolsos</option>
@@ -311,12 +314,12 @@ function agregarProducto() {
             </select>       
             </br>
             <label for="inputPrecio">Precio:</label>
-            <input id="inputPrecio" type="number" required>
+            <input class="campo" id="inputPrecio" type="number" required>
 
             <label for="inputStock">Stock:</label>
-            <input id="inputStock" type="number" required>
+            <input class="campo" id="inputStock" type="number" required>
 
-            <button type="submit">Agregar</button>
+            <button class="btn" type="submit">Agregar</button>
     `
     // Pausando envio
 
