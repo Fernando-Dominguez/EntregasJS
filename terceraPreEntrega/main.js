@@ -221,7 +221,6 @@ let productos = [
 
 if (localStorage.getItem("prod")) {
     productos = JSON.parse(localStorage.getItem("prod"))
-    console.log(productos)
 } else {
     productos = productos
 }
@@ -230,7 +229,6 @@ if (localStorage.getItem("prod")) {
 
 const contenedorProductos = document.querySelector("#contenedorPruductos");
 const tituloPrincipal = document.querySelector("#tituloProductos");
-console.log(tituloPrincipal)
 // Carga de Producto
 
 function cargarProductos(productosSeleccionados = productos) {
@@ -279,7 +277,6 @@ function buscarProductos() {
 
 function filtrarXCategoria(cat) {
     const palabraClv = cat.trim().toUpperCase()
-    console.log(cat)
     const resultado = productos.filter((producto) => producto.categoria.toUpperCase().includes(palabraClv)
     )
     if (resultado.length > 0) {
