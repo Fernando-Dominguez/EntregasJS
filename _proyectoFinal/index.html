@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet"
+        href="style.css">
+    <title>Catálogo</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="tituloProductos"
+            id="tituloProductos">Catálogo de Producto</h2>
+        <div class="contenedorPruductos"
+            id="contenedorPruductos">
+        </div>
+    </main>
+
+    <aside class="lateralDerecho"
+        id="lateralDerecho">
+        <section>
+            <h3>Cotización del Dólar</h3>
+            <div id="contenedorDolar"></div>
+            
+        </section>
+        <section>
+            <h3>Busqueda por nombre</h3>
+            <input class="campo"
+                type="text"
+                id="buscarProd">
+            <button class="btn"
+                id="buscar">Buscar</button>
+        </section>
+        <section>
+
+            <nav>
+                <h3>Categorías</h3>
+                <ul class="menu">
+                    <li>
+                        <button class="btn todos"
+                            id="todos">Todos</button>
+                    </li>
+                    <li>
+                        <button class="btn boligrafos"
+                            id="boligrafos">Boligrafos</button>
+                    </li>
+                    <li>
+                        <button class="btn bolsas"
+                            id="bolsas">Bolsas</button>
+                    </li>
+                    <li>
+                        <button class="btn bolsos"
+                            id="bolsos">Bolsos</button>
+                    </li>
+                    <li>
+                        <button class="btn calendarios"
+                            id="calendarios">Calendarios</button>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <h3>Agregar Producto</h3>
+                <button class="btn"
+                    id="agregarProd">Nuevo Producto</button>
+                <form id="formAgregar">
+                </form>
+            </section>
+    </aside>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

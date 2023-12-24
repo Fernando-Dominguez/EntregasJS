@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    border-radius: 10px;
+}
+
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* Preajuste de imagenes */
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+main {
+    padding: 0 3rem;
+}
+
+.tituloProductos {
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedorPruductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto {
+    box-shadow: 0 0 10px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productoImagen {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.productoDetalles {
+    background-color: rgb(43, 80, 226);
+    color: aliceblue;
+    padding: .5rem;
+    border-radius: 0 0 1rem 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: center;
+
+}
+
+.productoTitulo {
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.lateralDerecho {
+    padding: 30px;
+    text-align: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+section {
+    margin-top: 30px;
+}
+
+#agregarProd {
+    margin-top: 20px;
+}
+
+.dolarHoy{
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.dolarHoy tr:first-child{
+    background-color: antiquewhite;
+}
+
+.formAgregar {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formAgregar input {
+    margin: 50px;
+}
+
+.btn,
+.campo,
+h3 {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(43, 80, 226);
+    color: white;
+    padding: 5px;
+    border: 0;
+}
+

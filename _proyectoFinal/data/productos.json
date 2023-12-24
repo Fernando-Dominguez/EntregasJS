@@ -1,0 +1,202 @@
+[
+    {
+        "nombre": "boligrafo_01",
+        "titulo": "BOLIGRAFO DENVER",
+        "imagen": "./image/productos/boligrafos/boligrafo_01.jpg",
+        "categoria": "boligrafos",
+        "precio": 39,
+        "stock": 200
+    },
+    {
+        "nombre": "boligrafo_02",
+        "titulo": "BOLIGRAFO DOT",
+        "imagen": "./image/productos/boligrafos/boligrafo_02.jpg",
+        "categoria": "boligrafos",
+        "precio": 45,
+        "stock": 200
+    },
+    {
+        "nombre": "boligrafo_03",
+        "titulo": "BOLIGRAFO DUBLIN",
+        "imagen": "./image/productos/boligrafos/boligrafo_03.jpg",
+        "categoria": "boligrafos",
+        "precio": 34,
+        "stock": 200
+    },
+    {
+        "nombre": "boligrafo_04",
+        "titulo": "BOLIGRAFO MALIBU",
+        "imagen": "./image/productos/boligrafos/boligrafo_04.jpg",
+        "categoria": "boligrafos",
+        "precio": 43,
+        "stock": 200
+    },
+    {
+        "nombre": "boligrafo_05",
+        "titulo": "BOLIGRAFO MERIT",
+        "imagen": "./image/productos/boligrafos/boligrafo_05.jpg",
+        "categoria": "boligrafos",
+        "precio": 37,
+        "stock": 200
+    },
+    {
+        "nombre": "boligrafo_06",
+        "titulo": "BOLIGRAFO MONTANA",
+        "imagen": "./image/productos/boligrafos/boligrafo_06.jpg",
+        "categoria": "boligrafos",
+        "precio": 67,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_01",
+        "titulo": "ECO BOLSA 20X25 MANIJA RIÑON",
+        "imagen": "./image/productos/bolsas/ecobolsas_01.jpg",
+        "categoria": "bolsas",
+        "precio": 709,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_02",
+        "titulo": "ECO BOLSA 45X40X10 CON MANIJAS",
+        "imagen": "./image/productos/bolsas/ecobolsas_02.jpg",
+        "categoria": "bolsas",
+        "precio": 10,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_03",
+        "titulo": "ECO BOLSA 70X48X12 CON MANIJAS",
+        "imagen": "./image/productos/bolsas/ecobolsas_03.jpg",
+        "categoria": "bolsas",
+        "precio": 96,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_04",
+        "titulo": "ECO BOLSA 45X40X10 PLATEADA",
+        "imagen": "./image/productos/bolsas/ecobolsas_04.jpg",
+        "categoria": "bolsas",
+        "precio": 82,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_05",
+        "titulo": "ECO BOLSA 30X40X10 MANIJA RIÑON",
+        "imagen": "./image/productos/bolsas/ecobolsas_05.jpg",
+        "categoria": "bolsas",
+        "precio": 126,
+        "stock": 200
+    },
+    {
+        "nombre": "ecobolsas_06",
+        "titulo": "ECO BOLSA 42X37X16X16",
+        "imagen": "./image/productos/bolsas/ecobolsas_06.jpg",
+        "categoria": "bolsas",
+        "precio": 98,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_01",
+        "titulo": "PORTASET MATERO ANDES",
+        "imagen": "./image/productos/bolsos/bolsos_01.jpg",
+        "categoria": "bolsos",
+        "precio": 209,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_02",
+        "titulo": "PORTASET MATERO ACONCAGUA",
+        "imagen": "./image/productos/bolsos/bolsos_02.jpg",
+        "categoria": "bolsos",
+        "precio": 234,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_03",
+        "titulo": "MOCHILA PORTA NOTEBOOK POP",
+        "imagen": "./image/productos/bolsos/bolsos_03.jpg",
+        "categoria": "bolsos",
+        "precio": 468,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_04",
+        "titulo": "LUNCHERA TERMICA",
+        "imagen": "./image/productos/bolsos/bolsos_04.jpg",
+        "categoria": "bolsos",
+        "precio": 78,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_05",
+        "titulo": "MOCHILA PORTA NOTEBOOK ZIPPERS BPACK,",
+        "imagen": "./image/productos/bolsos/bolsos_05.jpg",
+        "categoria": "bolsos",
+        "precio": 126,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_06",
+        "titulo": "BOLSO DEPORTIVO TIPO EJECUTIVO ZIPPERS SPORT",
+        "imagen": "./image/productos/bolsos/bolsos_06.jpg",
+        "categoria": "bolsos",
+        "precio": 50644,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_07",
+        "titulo": "MOCHILA PORTA NOTEBOOK GRAPHS BPACK",
+        "imagen": "./image/productos/bolsos/bolsos_07.jpg",
+        "categoria": "bolsos",
+        "precio": 395,
+        "stock": 200
+    },
+    {
+        "nombre": "bolso_08",
+        "titulo": "MOCHILA ROCK",
+        "imagen": "./image/productos/bolsos/bolsos_08.jpg",
+        "categoria": "bolsos",
+        "precio": 439,
+        "stock": 200
+    },
+    {
+        "nombre": "calendario_01",
+        "titulo": "CARPA CON PORTA LAPIZ",
+        "imagen": "./image/productos/calendarios/calendario_01.jpg",
+        "categoria": "calendarios",
+        "precio": 13,
+        "stock": 200
+    },
+    {
+        "nombre": "calendario_02",
+        "titulo": "CARPA MEDIANA",
+        "imagen": "./image/productos/calendarios/calendario_02.jpg",
+        "categoria": "calendarios",
+        "precio": 25,
+        "stock": 200
+    },
+    {
+        "nombre": "calendario_03",
+        "titulo": "CARPA MINI",
+        "imagen": "./image/productos/calendarios/calendario_03.jpg",
+        "categoria": "calendarios",
+        "precio": 17,
+        "stock": 200
+    },
+    {
+        "nombre": "calendario_04",
+        "titulo": "PORTARRETRATO CALENDARIO",
+        "imagen": "./image/productos/calendarios/calendario_04.jpg",
+        "categoria": "calendarios",
+        "precio": 9,
+        "stock": 200
+    },
+    {
+        "nombre": "calendario_05",
+        "titulo": "PORTA SOBRES",
+        "imagen": "./image/productos/calendarios/calendario_05.jpg",
+        "categoria": "calendarios",
+        "precio": 12,
+        "stock": 200
+    }
+]
