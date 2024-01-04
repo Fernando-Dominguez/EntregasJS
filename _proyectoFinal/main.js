@@ -33,7 +33,7 @@ const contenedorProductos = document.querySelector("#contenedorPruductos");
 const tituloPrincipal = document.querySelector("#tituloProductos");
 const contDolar = document.querySelector("#contenedorDolar")
 
-// Api dolar para precio
+// Api dolar para cotización
 
 fetch("https://api.bluelytics.com.ar/v2/latest")
     .then(response => response.json())
@@ -56,13 +56,22 @@ fetch("https://api.bluelytics.com.ar/v2/latest")
 
 // Carga de archivo json de Productos
 
-fetch("./data/productos.json")
+fetch("./data/products.json")
     .then(response => response.json())
     .then(data => {
         productos = data
+    // Cargando el localStorage con la última data como backup, ante posibles problemas con la API o archivo JSON
+        localStorage.setItem("prod", JSON.stringify(productos))
+        // Carga de productos obtenidos de la API o archivo JSON
         cargarProductos(productos)
     })
-    .catch(error => { console.error("Ha ocurrido un error en la url") })
+    .catch(function (error){ 
+        // Ante un error con la o archivo JSON se cargan los ultimos datos guardados en el localStorage
+        productos = JSON.parse(localStorage.getItem("prod"))
+        // Carga de productos obtenidos del localStorage
+        cargarProductos(productos);
+        console.error("Ha ocurrido un error en la url y los productos se cargaran desde el localStorage")
+    })
 
 // Carga de Producto
 
