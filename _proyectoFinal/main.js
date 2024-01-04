@@ -56,7 +56,7 @@ fetch("https://api.bluelytics.com.ar/v2/latest")
 
 // Carga de archivo json de Productos
 
-fetch("./data/products.json")
+fetch("./data/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data
